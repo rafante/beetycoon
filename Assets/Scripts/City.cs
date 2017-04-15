@@ -6,7 +6,7 @@ public class City : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Debug.Log("Teste");
 	}
 	
 	// Update is called once per frame
