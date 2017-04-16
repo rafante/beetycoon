@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\City.cs" />
+     <Compile Include="Assets\Scripts\AStar\AStarFinder.cs" />
+     <Compile Include="Assets\Scripts\Abelha.cs" />
+     <Compile Include="Assets\Scripts\Tarefa.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity 5.6.0b11/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

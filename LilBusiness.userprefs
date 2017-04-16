@@ -1,0 +1,14 @@
+﻿<Properties RefactoringSettings.EnableRefactorings="True" StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AStar\AStarFinder.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Tarefa.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\Abelha.cs" Line="38" Column="11" />
+      <File FileName="Assets\Scripts\AStar\AStarFinder.cs" Line="141" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
