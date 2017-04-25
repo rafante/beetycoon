@@ -7,17 +7,43 @@ public class Abelha : MonoBehaviour {
 	private Tarefa tarefaAtual;
     private SortedList tarefas;
     private AStarFinder finder;
+    private GameManager gm;
+    private int honey, wax, propolis, pollen, nectar;
 
 	// Use this for initialization
 	void Awake ()
 	{
 	    finder = AStarFinder.getInstance();
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
+    private void Start()
+    {
+        gm = GameManager.main;
+        honey = gm.addCounter(10000);
+        gm.log("honey: " + honey);
+        wax = gm.addCounter(3000);
+        gm.log("wax: " + wax);
+        propolis = gm.addCounter(5000);
+        gm.log("propolis: " + propolis);
+        pollen = gm.addCounter(8000);
+        gm.log("pollen: " + pollen);
+        nectar = gm.addCounter(200);
+        gm.log("nectar: " + nectar);
+
+    }
+    // Update is called once per frame
+    void LateUpdate () {
+        if (gm.counterComplete(honey))
+            gm.increaseResource(GameManager.HONEY);
+        if (gm.counterComplete(wax))
+            gm.increaseResource(GameManager.WAX);
+        if (gm.counterComplete(propolis))
+            gm.increaseResource(GameManager.PROPOLIS);
+        if (gm.counterComplete(pollen))
+            gm.increaseResource(GameManager.POLLEN);
+        if (gm.counterComplete(nectar))
+            gm.increaseResource(GameManager.NECTAR);
+    }
 
     public void teste()
     {
