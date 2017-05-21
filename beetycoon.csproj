@@ -85,13 +85,16 @@
     <Compile Include="Assets\Scripts\FlowerField.cs" />
     <Compile Include="Assets\Scripts\GUIManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameTexts.cs" />
     <Compile Include="Assets\Scripts\ScrollQuad.cs" />
     <Compile Include="Assets\Scripts\Tarefa.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />
+    <Compile Include="Assets\Scripts\Utils.cs" />
     <Compile Include="Assets\Scripts\World2D.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Platform Game Assets\Readme.txt" />
+    <None Include="Assets\Scripts\texts.txt" />
     <None Include="Assets\UI\Spritesheet\blueSheet.xml" />
     <None Include="Assets\UI\Spritesheet\greenSheet.xml" />
     <None Include="Assets\UI\Spritesheet\greySheet.xml" />

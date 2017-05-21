@@ -1,0 +1,108 @@
+﻿{
+    "texts": [
+        {
+            "textKey": "bee.label",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Abelha"
+                },
+                {
+                    "lang": "en",
+                    "text": "Bee:"
+                }
+            ]
+        },
+        {
+            "textKey": "food.label",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Alimento:"
+                },
+                {
+                    "lang": "en",
+                    "text": "Food:"
+                }
+            ]
+        },
+        {
+            "textKey": "energy.label",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Energia:"
+                },
+                {
+                    "lang": "en",
+                    "text": "Energy:"
+                }
+            ]
+        },
+        {
+            "textKey": "life.label",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Vida:"
+                },
+                {
+                    "lang": "en",
+                    "text": "Life:"
+                }
+            ]
+        },
+        {
+            "textKey": "age.label",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Idade:"
+                },
+                {
+                    "lang": "en",
+                    "text": "Age:"
+                }
+            ]
+        },
+        {
+            "textKey": "armor.label",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Armadura:"
+                },
+                {
+                    "lang": "en",
+                    "text": "Armor:"
+                }
+            ]
+        },
+        {
+            "textKey": "tutorial.phase.1",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Olá!\n\nMeu nome é Beea.\nEu serei sua assistente"
+                },
+                {
+                    "lang": "en",
+                    "text": "Hi!\n\nMy name is Beea.\nI'll be your assistant"
+                }
+            ]
+        },
+        {
+            "textKey": "tutorial.phase.2",
+            "texts": [
+                {
+                    "lang": "pt-BR",
+                    "text": "Eu estarei sempre disponível neste botão caso precise de mim."
+                },
+                {
+                    "lang": "en",
+                    "text": "I'll always be available in this button in case you need me"
+                }
+            ]
+        }
+    ]
+}
