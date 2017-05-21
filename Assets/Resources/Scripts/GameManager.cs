@@ -11,8 +11,10 @@ public class GameManager : MonoBehaviour{
     private int pollen;
     private int nectar;
     public UnityEngine.UI.Text honeyText, propolisText, waxText, pollenText, nectarText;
+    public Tutorial tutorial;
     private Stopwatch watch = new Stopwatch();
     private Dictionary<int, TimeStamp> counters;
+    private Dictionary<string, UnityEngine.UI.Text> containers;
     public static GameManager main;
     private int curKey = 0;
     public const int HONEY = 1;
@@ -25,13 +27,35 @@ public class GameManager : MonoBehaviour{
     public const int ERROR = 2;
     public int logLevel;
     public bool logging;
+    public bool testing;
+    public string tutorialPrefix;
+    public string lang;
 
     private void Awake()
     {
         main = this;
         watch.Start();
+        containers = new Dictionary<string, UnityEngine.UI.Text>();
         counters = new Dictionary<int, TimeStamp>();
         curKey = counters.Count;
+    }
+
+    void Start()
+    {
+        GameTexts.init();
+        setLanguage("pt-BR");
+        refreshAllTexts();
+    }
+
+    private void refreshAllTexts()
+    {
+        UnityEngine.UI.Text[] allTexts = FindObjectsOfType<UnityEngine.UI.Text>();
+        foreach (var uiText in allTexts)
+        {
+            string key = uiText.text;
+            string text = GameTexts.get(key, lang);
+            uiText.text = text;
+        }
     }
 
     public bool counterComplete(int key)
@@ -87,7 +111,7 @@ public class GameManager : MonoBehaviour{
         log("Resource " + resourceName(resourceKey) + " increased by " + amount);
     }
 
-    private void Update()
+    void FixedUpdate()
     {
         honeyText.text = honey.ToString();
         waxText.text = wax.ToString();
@@ -122,6 +146,17 @@ public class GameManager : MonoBehaviour{
             if (level <= logLevel)
                 UnityEngine.Debug.Log(obj);
         }
+    }
+
+    public void setLanguage(string lang)
+    {
+        this.lang = lang;
+        refreshTexts();
+    }
+    
+    public void refreshTexts()
+    {
+        tutorial.refresh(GameTexts.allTexts, tutorialPrefix, lang);
     }
 }
 
